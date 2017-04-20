@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/*
+ * MAIN SITE DIV STYLES
+ */
+#page1 {
+    padding-top: 10%;
+    height: 1000px; 
+    background-color: red;
+}
+
+#page2 {
+    height: 1000px;
+    background-color: blue;
+}
+
+#page3 {
+    height: 1000px;
+    background-color: gray;
+}
+
+#page4 {
+    height: 1000px;
+    background-color: yellow;
+}
+body {
+    padding-top: 50px;
+}
+
+#photo {
+    height: 300px;
+}
+
+/*
+.name {
+    font-size: 4em;
+}
+
+ul.jobs {
+  padding-top: 10px;  
+}
+
+.jobs li {
+    list-style-type: none;
+    font-size: 1.7em;
+    text-align: left;
+    line-height: 2;
+}
+
+.school li {
+    list-style-type: none;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.25;
+}*/

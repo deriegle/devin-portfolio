@@ -1,0 +1,124 @@
+/*  COLORS:
+ *
+ *  ICE BLUE:     #99d3df;
+ *  FRESH WATER:  #88bbd6;
+ *  PLASTER:      #CDCDCD;
+ *  LINEN:        #E9E9E9;
+ */
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #18121e;
+    color: #eac67a;
+}
+
+p a {
+    color: #eac67a;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #eac67a;
+}
+
+body {
+    padding-top: 75px;
+}
+
+#info {
+   padding-top: 15px; 
+   padding-bottom: 30px;
+}
+
+#lang {
+    padding-bottom: 15px;
+    border-top: 1px dashed #aaa;
+    border-bottom: 1px dashed #aaa;
+    background-color: #233237;
+}
+
+.thumbcolor {
+    background-color: #233237;
+    border: none;
+    border-radius: 0;
+    color: #eac67a !important;
+}
+
+.thumbnail img {
+    height: 13em;
+}
+
+#contact {
+    background-color: #233237;
+}
+
+#projects {
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 992px) {
+    .thumbnail img {
+        height: 10em;
+    }
+    .name {
+        padding-top: 15%;
+    }
+    
+    #lang {
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+}
+
+#profile {
+    margin: 0 auto;
+    width: 75%;
+}
+h1 {
+    color: #984b43;
+    
+}
+.name {
+    color: #eac67a;
+    font-size: 800%;
+}
+
+/* NAVBAR-CUSTOM CLASS */
+
+.navbar-custom {
+    background-color:#233237;
+    color: #eac67a;
+    border-radius:0;
+    border-bottom: 1px solid #2c3e44;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #eac67a;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #eac67a;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #39535b;
+}
+
+.navbar-custom .navbar-brand {
+    color: #eac67a;
+}
+.navbar-custom .navbar-toggle {
+    background-color: #39535b;
+}
+.navbar-custom .icon-bar {
+    background-color:#eac67a;
+}

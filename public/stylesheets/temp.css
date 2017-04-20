@@ -1,0 +1,32 @@
+body {
+    background: gray;
+    color: #333;
+}
+
+#container {
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 2px solid #444;
+    margin-top: 15%;
+    width: 350px;
+    padding: 15px;
+    background: #888;
+    text-align: center;
+}
+h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#container a {
+    color: #333;
+}
+
+#email {
+    padding: 0;
+    margin: 0;
+}

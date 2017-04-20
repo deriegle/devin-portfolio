@@ -1,0 +1,172 @@
+<% include partials/header %>
+<% include partials/navbar %>
+
+  		<div class='container-fluid text-center'>
+				
+			<!-- INFO SECTION -->
+			<div class='row' id='info'>
+				 <a id="info" class="smooth"></a>
+				 
+				 <div class='col-md-4'>
+					  <h1 class='name'>Devin</h1>
+				 </div>
+				 
+				 <!-- PROFILE PICTURE -->
+				 <div class='col-md-4'>
+					  <img id='profile' src='img/profile.jpg' class='img-responsive img-rounded'>
+				 </div>
+				 
+				 <div class='col-md-4 right-column'>
+					  <h1 class='name'>Riegle</h1>
+				 </div>
+				 
+			</div><!-- /.row -->
+		</div>
+		
+				
+		<!-- LANGUAGES SECTION -->
+		<div id='lang' class='container-fluid text-center'>
+			<div class='row'>
+				<a id="languages" class="smooth"></a>
+			  	<div class='col-lg-12'>
+					<h1><i class='fa fa-keyboard-o'></i> Languages & Frameworks</h1>
+			  	</div>
+			</div>
+			<br>
+			<div class='row'>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/HTML5.png' atl='HTML5'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, suscipit consectetur amet accusantium. Fugit, eius error molestiae hic voluptatem necessitatibus eveniet similique est sapiente dolore doloribus distinctio aperiam provident ipsam.</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/CSS3.png' alt='CSS3'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veritatis, expedita, saepe, ab sunt obcaecati accusamus odio totam quo dolor cum tempore quidem</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/JS.png' alt='Javascript' class='img-responsive'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veritatis, expedita, saepe, ab sunt obcaecati accusamus odio totam quo dolor cum tempore quidem</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/NodeJs.png' alt='Node.JS' class='img-responsive'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veritatis, expedita, saepe, ab sunt obcaecati accusamus odio totam quo dolor cum tempore quidem</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/MongoDB.png' alt='MongoDB' class='img-responsive'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veritatis, expedita, saepe, ab sunt obcaecati accusamus odio totam quo dolor cum tempore quidem</p>
+						</div>
+					</div>
+				</div>
+				<div class='col-lg-2 col-md-6'>
+					<div class='thumbnail thumbcolor'>
+						<img src='img/Wordpress.png' alt='Wordpress' class='img-responsive'>
+						<div class='caption thumbcolor'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, veritatis, expedita, saepe, ab sunt obcaecati accusamus odio totam quo dolor cum tempore quidem</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		</div>
+				
+		
+		
+		<div class='container-fluid text-center' id='projects'>
+				
+			<!-- PROJECTS SECTION -->
+			
+			<div class='row'>
+				 <a id="projects" class="smooth"></a>
+				 <div class='col-lg-12'>
+					  <h1><i class='fa fa-folder-open'></i> Completed Projects</h1>
+				 </div>
+			</div><!-- /.row -->
+			
+			<div class='row'>
+				 <div class='col-lg-4'>
+					  <h3>YelpCamp</h3>
+					  <a href='#'><img src='https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/superlist-creative-directory-html-website-template.jpg' width='250' height='250'></a>
+				 </div>
+				 <div class='col-lg-4'>
+					  <h3>RGB ColorGame</h3>
+					  <a href='#'><img src='https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/superlist-creative-directory-html-website-template.jpg' width='250' height='250'></a> 
+				 </div>
+				 <div class='col-lg-4'>
+					  <h3>RESTFUL Blog</h3>
+					  <a href='#'><img src='https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/superlist-creative-directory-html-website-template.jpg' width='250' height='250'></a>
+				 </div>
+			</div><!-- /.row -->
+		</div>
+		
+		<div class='container-fluid' id='contact'>
+			<!-- CONTACT SECTION -->
+			
+			<div class='row'>
+				 <div class='col-lg-12 text-center'>
+					  <h1><i class='fa fa-phone-square'></i> Contact</h1>
+				 </div>
+			</div><!-- /.row -->
+			<br> 
+			<div class='row'>
+				<div class='col-md-6'>
+					<h2><%= author.name %></h2>
+					<h4>Web Developer</h4>
+					<p>
+						Phone: (330) 260-8436<br>
+					   	Email: <a href='mailto:<%= author.email %>'><%= author.email %></a><br>
+					   	Location: <%= author.location %>
+					</p>
+					<h4>Local/Remote Computer Technician</h4>
+					<p>
+						<strong>Local: </strong>Contact me for more information. <small>I am located in Gwinnett County area</small><br>
+						<strong>Remote: </strong>Using Teamviwer <small>(Cell/Skype & Internet access are required)</small><br>
+						<a href='#'>Download Teamviewer Client</a>
+					</p>
+				 </div><!-- /.col-md-6 -->
+				 <div class='col-md-6'>
+					<form action='/contact' method='POST'>
+						<div class='form-group'>
+							<label for='name'>Name</label>
+							<input type='text' id='name' name='name' placeholder='John Doe' class='form-control' required>
+						</div>
+						<div class='form-group'>
+							<label for='email'>Email</label>
+							<input type='email' id='email' name='email' class='form-control' placeholder='email@gmail.com' required>
+						</div>
+						<div class='form-group'>
+							<label for='ques'>Question</label>
+							<textarea name='ques' id='ques' class='form-control' rows='4' placeholder='Your question here' required></textarea>
+						</div>
+						<div class='form-group'>
+							<button class='btn btn-warning btn-lg btn-block' type='submit'>Contact Devin</button>
+						</div>
+					</form>
+				 </div>
+			</div><!-- /.row -->
+			<div class='row' style='height: 50px'>
+				 <div class='col-lg-12'>
+				 	<p class='pull-left'><i class='fa fa-skype' aria-hidden='true'></i> deriegle<br>
+				 	<a href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+					  <p class='pull-right'>&copy; Copyright <%= site.navtitle %> 2017</p>
+				 </div>
+			</div><!-- /.row -->
+				
+		</div><!-- /.container -->
+		  
+<% include partials/footer %>

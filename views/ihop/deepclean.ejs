@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+	 <head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name='description' content='<%= site.description %>'>
+		<title><%= site.title %></title>
+		<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet' type='text/css' href='../stylesheets/customcheckboxes.css'>
+		<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+		
+		<style>
+			.drop {
+				margin-left: 15px;
+			}
+			
+			li {
+				list-style-type: none;
+			}
+			
+			.container {
+				height: 100%;
+			}
+			.jumbotron {
+				height: 1000px;
+			}
+		</style>
+	 </head>
+	 <body>
+	 	<div class='container'>
+	 		<div class='jumbotron'>
+	 			<h1>Move-Out Deep Clean Checklist</h1>
+	 			<p>
+	 				Please complete all the cleaning tasks below and check off each one after it is complete.<br> 
+	 				Be ready to show the Resident Housing Director at the time of inspection
+	 			</p>
+	 			<form action='/ihop/email' method='POST'>
+		 			<div class='panel panel-primary'>
+		 				<div class='panel-heading'>
+		 					<h3 class='panel-title' id='panel-one-title'>Community Space <span class="caret drop"></span></h3>
+		 				</div>
+		 				<div class='panel-body' id='panel-one-body'>
+		 					
+		 					<% todos.forEach(function(todo){ %>
+		 						<% if(todo.type == "community"){ %>
+		 							<input type='checkbox' id="<%= todo._id %>_com" name='community' value='<%= todo._id %>'/>
+		 							<label for='<%= todo._id %>_com'><%= todo.value %></label>
+		 					<%	} }); %>
+								
+		 				</div>
+		 			</div><!-- /.panel -->
+	 			
+		 			<div class='panel panel-primary'>
+		 				<div class='panel-heading'>
+		 					<h3 class='panel-title' id='panel-two-title'>Personal Living Space <span class="caret drop"></span></h3>
+		 				</div>
+		 				<div class='panel-body' id='panel-two-body'>
+		 					
+		 					<% todos.forEach(function(todo){ %>
+		 						<% if(todo.type == "personal"){ %>
+		 							<input type='checkbox' id="<%= todo._id %>_per" name='personal' value='<%= todo._id %>' />
+		 							<label for='<%= todo._id %>_per'><%= todo.value %></label>
+		 					<%	} }); %>
+		 				</div>
+		 				
+		 			</div><!-- /.panel -->
+	 			
+	 			
+	 				Your Name: <input type='text' name='username' id='username'>
+	 				<br>
+		 			Your Email: <input type='email' name='email' id='email'>
+		 			<br><br>
+		 			<input type='submit' value='Send Email'>
+	 			</form>
+	 			<br><br>
+	 			
+	 			
+	 		</div><!-- /.jumbotron -->
+	 	</div><!-- /.container -->
+	 	
+	 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' type='text/javascript'></script>
+      		
+		<script type='text/javascript'>
+	 		$( "#panel-one-title" ).click(function() {
+  				$("#panel-one-body").toggle();
+			});
+			
+			$("#panel-two-title").click(function(){
+				$("#panel-two-body").toggle();
+			});
+	 	</script>
+	</body>
+</html>
