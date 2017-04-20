@@ -1,16 +1,16 @@
 {
-  "name": "home",
+  "name": "devinportfolio",
   "version": "1.0.0",
-  "description": "Home Page | Devin Riegle",
+  "description": "My portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Devin Riegle",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.15.2",
-    "mongoose": "^4.8.6"
   }
 }
