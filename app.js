@@ -1,6 +1,7 @@
 var express     = require('express'),
     bodyParser  = require('body-parser'),
     mailer      = require('emailjs/email'),
+    routes      = require('./routes'),
     app         = express();
 
 app.set('view engine', 'ejs');
@@ -19,23 +20,8 @@ app.locals.author = {
     email: 'riegledevin@gmail.com'
 };
 
-var currentTime = new Date();
-
-/*****************************/
-/*  DEVIN's PORTFOLIO ROUTES */
-/*****************************/
-app.get('/', function(req, res){
-   res.render('comingsoon.ejs');
-});
-
-app.get('/site', function(req, res){
-    res.render('index.ejs');
-});
-
-app.post('/contact', function(req, res){
-    res.send('Thank you for contacting us!');
-});
+app.use("/", routes);
 
 app.listen(3000, "localhost", function(){
-    console.log("Devin's Portfolio webserver started successfully @ " + currentTime.toString());
+    console.log("Devin's Portfolio webserver started successfully @ ");
 });
